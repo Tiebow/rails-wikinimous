@@ -1,0 +1,8 @@
+<%= link_to 'Wikinimous', articles_path %>
+
+<h1>
+<%= @articles.title %>
+<%= link_to image_tag('https://static.thenounproject.com/png/4143839-200.png', width: 40), edit_article_path(@articles) %>
+<%= link_to image_tag('https://static.thenounproject.com/png/199029-200.png', width: 40), article_path(@articles), method: :delete, data: { confirm: "are you sure?" } %>
+</h1>
+<p><%= @articles.content %></p>

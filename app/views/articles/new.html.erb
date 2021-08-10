@@ -1,0 +1,12 @@
+<div class="container">
+<%= link_to 'Wikinimous', articles_path %>
+
+<%= form_for(@articles) do |f| %>
+<%= f.label :title %>
+<%= f.text_field :title %>
+<%= f.label :content %>
+<%= f.text_field :content %>
+<%= f.submit %>
+<% end %>
+
+</div>
